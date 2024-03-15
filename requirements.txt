@@ -1,0 +1,4 @@
+# It is possible to specify requirements as plain names.
+pytest
+pytest-cov
+beautifulsoup4
