@@ -1,8 +1,10 @@
 DEPLOY: true
 SCAN: false
-#test:
-#  - '. venv/bin/activate'
-#  - 'pytest'
-
-                                  
-                                
+build:
+  - 'python3 -m venv venv'
+  - '. venv/bin/activate'
+  - 'pip install -r requirements.txt'
+test:
+  - '. venv/bin/activate'
+  - 'pip install pytest'
+  - 'pytest -v tests/'
