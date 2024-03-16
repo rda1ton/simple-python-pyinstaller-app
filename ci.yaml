@@ -1,2 +1,8 @@
 DEPLOY: true
 SCAN: false
+test:
+  - '. venv/bin/activate'
+  - 'pytest'
+
+                                  
+                                
